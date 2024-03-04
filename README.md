@@ -32,13 +32,19 @@ cargo run
 
 ## Running exercises and working on them
 
-Exercises are set in examples directory of ever lesson and they are compiled on will, thus you won't get compiler error every time you run cargo.
+Exercises are set in examples directory of every lesson and they are compiled only when you run certain example, thus you won't get compiler error every time you run cargo.
 To work on specific exercise and run it:
 
 - Clone the repo
 
 ```shell
 git clone https://github.com/Web3-Academy-Rust-Course/rust-course-part-one.git
+```
+
+- Switch brach from main -> solutions
+
+```shell
+git checkout solutions
 ```
 
 - Navigate to the lecture directory
