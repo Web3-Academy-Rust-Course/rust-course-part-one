@@ -1,10 +1,10 @@
 // Generic struct representing a transaction with generic data and signature types
 #[allow(dead_code)]
-struct Transaction<_, _> {
+struct Transaction<T, H> {
     from: String,
     to: String,
-    data: _,
-    signature: _,
+    data: T,
+    signature: H,
 }
 
 fn main() {

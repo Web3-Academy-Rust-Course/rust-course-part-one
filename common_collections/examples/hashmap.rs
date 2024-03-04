@@ -13,7 +13,7 @@ fn main() {
 
     // IMPLEMENT teams_map2
     // use collect here, don't implement it like above
-    let teams_map2...
+    let teams_map2: HashMap<_, _> = teams.into_iter().collect();
 
     assert_eq!(teams_map1, teams_map2);
 

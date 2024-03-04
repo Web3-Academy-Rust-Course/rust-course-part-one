@@ -2,7 +2,7 @@
 enum MyError {
     InvalidInput(String),
     ResourceNotFound(String),
-    // ... (define custom error for input that is too short and implement it in the code)
+    InputTooShort(String),
 }
 
 fn validate_user_input(input: Option<String>) -> Result<(), MyError> {
@@ -14,7 +14,9 @@ fn validate_user_input(input: Option<String>) -> Result<(), MyError> {
 
     // replace _ with custom error to make it work
     if input_str.len() < 5 {
-        return Err(_("Input must be at least 5 characters long".to_string()));
+        return Err(MyError::InputTooShort(
+            "Input must be at least 5 characters long".to_string(),
+        ));
     }
 
     if input_str.chars().any(|c| !c.is_alphanumeric()) {

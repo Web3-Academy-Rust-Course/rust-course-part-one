@@ -6,7 +6,7 @@ trait Block {
 }
 
 // Generic function to get the hash of a block, regardless of its specific type
-fn get_block_hash<_: Block>(block: &_) -> String {
+fn get_block_hash<T: Block>(block: &T) -> String {
     block.get_hash()
 }
 

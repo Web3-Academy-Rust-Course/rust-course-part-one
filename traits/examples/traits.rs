@@ -4,6 +4,7 @@ use std::fmt::Debug;
 // Trait defining common operations for shapes
 trait Shape {
     // Hint: Something is missing here
+    fn get_area(&self) -> f64;
     fn what_am_i(&self) -> ()
     where
         Self: Debug,

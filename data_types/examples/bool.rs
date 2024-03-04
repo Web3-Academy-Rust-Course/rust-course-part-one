@@ -2,7 +2,7 @@
 fn main() {
     let f: bool = false;
     let t = true;
-    if !t && t == f {
+    if t && t != f {
         println!("Success!");
     }
 }

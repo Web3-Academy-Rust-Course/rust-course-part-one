@@ -7,6 +7,7 @@ fn main() {
 }
 
 // Only modify the code below! Tip: this function should return something!
-fn take_ownership(s: String) {
-    println!("{}", s);
+fn take_ownership(s: String) -> String {
+    println!("{}", &s);
+    s
 }
